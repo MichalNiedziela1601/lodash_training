@@ -3,206 +3,175 @@
 module.exports = {
     castArray: function ()
     {
-        return [];
-    },
-    clone: function ()
+        return [{name: 'Jack', surname: 'Strong', age: 26, address: 'address'}];
+    }, clone: function ()
     {
-        return [];
-    },
-    cloneDeep: function ()
+        return [[{name: 'Thorgal', age: 32}, {name: 'Bjork', age: 21}, {name: 'Edwin', age: 27}]];
+    }, cloneDeep: function ()
     {
-        return [];
-    },
-    eq: function ()
+        return [[['Bob', {age: 44}], ['Mark', {age: 35}]]];
+    }, eq: function ()
     {
-        return [];
-    },
-    gt: function ()
+        return [{name: 'Michael'}, {name: 'John'}];
+    }, gt: function ()
     {
-        return [];
-    },
-    gte: function ()
+        return [6, -3];
+    }, gte: function ()
     {
-        return [];
-    },
-    isArguments: function ()
+        return [3, 3];
+    }, isArguments: function ()
     {
-        return [];
-    },
-    isArray: function ()
+        return [function ()
+        {
+            return arguments;
+        }(3, 4, 5)];
+    }, isArray: function ()
     {
-        return [];
-    },
-    isArrayBuffer: function ()
+        return [[[1, 2, 3], ['dd', 'f'], 'ff']];
+    }, isArrayBuffer: function ()
     {
-        return [];
-    },
-    isArrayLike: function ()
+        return [new ArrayBuffer(2)];
+    }, isArrayLike: function ()
     {
-        return [];
-    },
-    isArrayLikeObject: function ()
+        var str = String('qwertyuiopasdfghjklzxcvbn');
+        return [str];
+    }, isArrayLikeObject: function ()
     {
-        return [];
-    },
-    isBoolean: function ()
+        return [[2, 5, 7]];
+    }, isBoolean: function ()
     {
-        return [];
-    },
-    isBuffer: function ()
+        return [3, 5];
+    }, isBuffer: function ()
     {
-        return [];
-    },
-    isDate: function ()
+        return [new Int32Array(8)];
+    }, isDate: function ()
     {
-        return [];
-    },
-    isEmpty: function ()
+        return [new Date()];
+    }, isEmpty: function ()
     {
-        return [];
-    },
-    isEqual: function ()
+        return [['sdf', 'sdf', 'dd']];
+    }, isEqual: function ()
     {
-        return [];
-    },
-    isEqualWith: function ()
+        return [{name: 'sdf', age: 44, weight: 55}, {name: 'sdf', age: 44, weight: 55}];
+    }, isEqualWith: function ()
     {
-        return [];
-    },
-    isError: function ()
+        return [['Hi', 'John'], ['Hi', 'John']];
+    }, isError: function ()
     {
-        return [];
-    },
-    isFinite: function ()
+        return [new ReferenceError];
+    }, isFinite: function ()
     {
-        return [];
-    },
-    isFunction: function ()
+        var infinity = 3 * Number.POSITIVE_INFINITY;
+        return [infinity];
+    }, isFunction: function ()
     {
-        return [];
-    },
-    isInteger: function ()
+        return [function ()
+        {
+        }];
+    }, isInteger: function ()
     {
-        return [];
-    },
-    isLength: function (arr)
+        return [Number.POSITIVE_INFINITY];
+    }, isLength: function (arr)
     {
-        return [];
-    },
-    isMap: function ()
+        return [arr.length];
+    }, isMap: function ()
     {
-        return [];
-    },
-    isMatch: function (obj)
+        var map = new Map();
+        return [map];
+    }, isMatch: function (obj)
     {
-        return [];
-    },
-    isMatchWith: function ()
+        return [obj, {age: 34}];
+    }, isMatchWith: function ()
     {
-        return [];
-    },
-    isNaN: function ()
+        var object = {'greeting': 'hello'};
+        var source = {'greeting': 'hi'};
+        return [object, source];
+    }, isNaN: function ()
     {
-        return [];
-    },
-    isNative: function ()
+        return [undefined];
+    }, isNative: function ()
     {
-        return [];
-    },
-    isNil: function ()
+
+        return [String.prototype.charAt];
+    }, isNil: function ()
     {
-        return [];
-    },
-    isNull: function ()
+        return [undefined];
+    }, isNull: function ()
     {
-        return [];
-    },
-    isNumber: function ()
+        return [null];
+    }, isNumber: function ()
     {
-        return [];
-    },
-    isObject: function ()
+        var number = Number(44);
+        var obje = new Object(number);
+        return [obje];
+    }, isObject: function ()
     {
-        return [];
-    },
-    isObjectLike: function ()
+        return [{}];
+    }, isObjectLike: function ()
     {
-        return [];
-    },
-    isPlainObject: function ()
+        return [['string', 4]];
+    }, isPlainObject: function ()
     {
-        return [];
-    },
-    isRegExp: function ()
+        return [{name: 'Bartek', adult: true, married: false}];
+    }, isRegExp: function ()
     {
-        return [];
-    },
-    isSafeInteger: function ()
+        return [/abc/];
+    }, isSafeInteger: function ()
     {
-        return [];
-    },
-    isSet: function ()
+        return [Number.MIN_VALUE];
+    }, isSet: function ()
     {
-        return [];
-    },
-    isString: function ()
+        return [new Set];
+    }, isString: function ()
     {
-        return [];
-    },
-    isSymbol: function ()
+        return ['asdfghjkl'];
+    }, isSymbol: function ()
     {
-        return [];
-    },
-    isTypedArray: function ()
+        return [Symbol.iterator];
+    }, isTypedArray: function ()
     {
-        return [];
-    },
-    isUndefined: function ()
+        return [new Uint16Array];
+    }, isUndefined: function ()
     {
-        return [];
-    },
-    isWeakMap: function ()
+        return [undefined];
+    }, isWeakMap: function ()
     {
-        return [];
-    },
-    isWeakSet: function ()
+        return [new WeakMap];
+    }, isWeakSet: function ()
     {
-        return [];
-    },
-    lt: function ()
+        return [new WeakSet];
+    }, lt: function ()
     {
-        return [];
-    },
-    lte: function ()
+        return [-4, -3];
+    }, lte: function ()
     {
-        return [];
-    },
-    toArray: function ()
+        return [3, 3];
+    }, toArray: function ()
     {
-        return [];
-    },
-    toInteger: function ()
+        return [{name: 'Jack', age: 26}];
+    }, toInteger: function ()
     {
-        return [];
-    },
-    toLength: function ()
+        return ['36.6'];
+    }, toLength: function ()
     {
-        return [];
-    },
-    toNumber: function ()
+        return [3.2];
+    }, toNumber: function ()
     {
-        return [];
-    },
-    toPlainObject: function ()
+        return ['2016'];
+    }, toPlainObject: function ()
     {
-        return [];
-    },
-    toSafeInteger: function ()
+        function Foo()
+        {
+            this.b = 2;
+        }
+        Foo.prototype.c = 3;
+
+        return [{'a': 1}, new Foo];
+    }, toSafeInteger: function ()
     {
-        return [];
-    },
-    toString: function ()
+        return [Number.POSITIVE_INFINITY];
+    }, toString: function ()
     {
-        return [];
+        return [[1,12,2015]];
     }
 };
