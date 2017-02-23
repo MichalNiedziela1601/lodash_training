@@ -4,138 +4,142 @@ module.exports = {
 
     camelCase: function ()
     {
-        return [];
+        return ['Some String To Test Function'];
     },
     capitalize: function ()
     {
-        return [];
+        return ['sOME STRING TO TEST FUNCTION'];
     },
     deburr: function ()
     {
-        return [];
+        return ['som\u00E8 string to test function'];
     },
     endsWith: function ()
     {
-        return [];
+        return ['abs','b',2];
     },
     escape: function ()
     {
-        return [];
+        return ['Tom & Jerry are old friends'];
     },
     escapeRegExp: function ()
     {
-        return [];
+        return ['[realskill](https://realskill.com/)'];
     },
     kebabCase: function ()
     {
-        return [];
+        return ['Some String to test function'];
     },
     lowerCase: function ()
     {
-        return [];
+        return ['SOME STRING TO TEST FUNCTION'];
     },
     lowerFirst: function ()
     {
-        return [];
+        return ['SOME STRING TO TEST FUNCTION'];
     },
     pad: function ()
     {
-        return [];
+        return ['some long sweet text',30,'._'];
     },
     padEnd: function ()
     {
-        return [];
+        return ['some another long sweet text',36,'.*'];
     },
     padStart: function ()
     {
-        return [];
+        return ['try again some long sweet text',42,'|_'];
     },
     parseInt: function ()
     {
-        return [];
+        return ['8'];
     },
     repeat: function ()
     {
-        return [];
+        return ['repeat me!',4];
     },
     replace1: function ()
     {
-        return [];
+        return ['Hello World','World','universe!'];
     },
     replace2: function ()
     {
-        return [];
+        return ['Hello Universe', /Universe/, 'world!'];
     },
     replace3: function ()
     {
-        return [];
+        return ['Hello Universe','Universe', function() { return 'world!';}];
     },
     replace4: function ()
     {
-        return [];
+        return ['Hello Universe', /Universe/, function() { return 'world!';}];
     },
     snakeCase: function ()
     {
-        return [];
+        return ['Some string to test function'];
     },
     split: function ()
     {
-        return [];
+        return ['split-me','-',2];
     },
     startCase: function ()
     {
-        return [];
+        return ['some string to test function'];
     },
     startsWith: function ()
     {
-        return [];
+        return ['abc','a',0];
     },
     template: function ()
     {
-        return [];
+        return ['hi <%= data.user %>!', { 'variable': 'data' }];
     },
     toLower: function ()
     {
-        return [];
+        return ['Some string to test function'];
     },
     toUpper: function ()
     {
-        return [];
+        return ['Some string to test function'];
     },
     trim: function ()
     {
-        return [];
+        return ['    some string to test function', ' '];
     },
     trimEnd: function ()
     {
-        return [];
+        return ['some string to test    ',' '];
     },
     trimStart: function ()
     {
-        return [];
+        return ['    some string to test function.....', ' '];
     },
     truncate: function ()
     {
-        return [];
+        return ['some very long text, sdfe dsfsfsd',{
+            'length' : 24,
+            'separator': /,? +/,
+            'omission' : '...'
+        }];
     },
     unescape: function ()
     {
-        return [];
+        return ['tom &amp; jerry were old friends'];
     },
     upperCase: function ()
     {
-        return [];
+        return ['some string to test function'];
     },
     upperFirst: function ()
     {
-        return [];
+        return ['some string to test function'];
     },
     words1: function ()
     {
-        return [];
+        return ['bread, butter, milk'];
     },
     words2: function ()
     {
-        return [];
+        return ['bread, butter, milk', /[^, ]+/g];
     }
 };
